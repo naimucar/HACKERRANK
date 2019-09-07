@@ -1,0 +1,14 @@
+def kangaroo(x1, v1, x2, v2):
+    for t in range(10000):
+        kangaroo1=x1+(t*v1)
+        kangaroo2=x2+(t*v2)
+        if kangaroo1==kangaroo2:
+            return 'YES'
+    return 'NO'
+x1V1X2V2 = input().split()
+x1 = int(x1V1X2V2[0])
+v1 = int(x1V1X2V2[1])
+x2 = int(x1V1X2V2[2])
+v2 = int(x1V1X2V2[3])
+result = kangaroo(x1, v1, x2, v2)
+print(result)
