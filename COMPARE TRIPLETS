@@ -1,0 +1,12 @@
+def compareTriplets(a, b):
+    sayac1,sayac2=0,0
+    for i in range(len(a)):
+        if a[i]>b[i]:
+            sayac1+=1
+        if b[i]>a[i]:
+            sayac2+=1
+    print(sayac1,sayac2)
+a = list(map(int, input().rstrip().split()))
+b = list(map(int, input().rstrip().split()))
+result = compareTriplets(a, b)
+
