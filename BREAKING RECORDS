@@ -1,0 +1,32 @@
+# K=10
+# scores=[10 , 5 , 20, 20, 4, 5, 2, 25, 1]
+# c=[]
+# d=[]
+# k=scores[0]
+# s=scores[0]
+# for i in range( len( scores ) ):
+#     if scores[i]>k:
+#         c+=[scores[i]]
+#         k=scores[i]
+#     if scores[i]<s:
+#         d+=[scores[i]]
+#         s=scores[i]
+# print(len(c),len(d))
+
+def breakingRecords(scores):
+    c=[]
+    d=[]
+    k=scores[0]
+    s=scores[0]
+    for i in range( len( scores ) ):
+        if scores[i]>k:
+            c+=[scores[i]]
+            k=scores[i]
+        if scores[i]<s:
+            d+=[scores[i]]
+            s=scores[i]
+    print(len(c),len(d))
+n = int(input())
+scores = list(map(int, input().rstrip().split()))
+result = breakingRecords(scores)
+
