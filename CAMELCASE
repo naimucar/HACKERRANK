@@ -1,0 +1,7 @@
+s='oneTfggYnnnnUnnnnUmmmmEvvvvRvvvvvTbbbYnnnnIj'
+
+x=[s.index(i) for i in s if i.isupper()]
+print(len(x)+1)
+
+
+
