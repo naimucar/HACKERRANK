@@ -1,0 +1,23 @@
+a=input('paswoord_kontrol')
+n=9
+karakter='!@#$%^&*()-+'
+kutu=[]
+for i in a:
+    if i.isupper():
+        kutu+=['a']
+    if i.islower():
+        kutu+=['b']
+    if i.isnumeric():
+        kutu+=['c']
+    if i in karakter:
+        kutu+=['d']
+say=len(kutu)
+kutu=set(kutu)
+k=4-len(kutu)
+kontrol=say+k
+if kontrol>=6:
+    print(k)
+else:
+    print(6-n)
+
+
