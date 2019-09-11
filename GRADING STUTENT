@@ -1,0 +1,12 @@
+a=[73,67,100,33,38,71,89,88,87]
+
+
+for i in a:
+    if i <38:
+        print(i)
+    elif i==100:
+        print(i)
+    elif i%5>=3 :
+        print(i+(5-i%5))
+    else:
+        print(i)
