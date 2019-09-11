@@ -1,0 +1,19 @@
+def timeConversion(s):
+    if 'AM' not in s and "PM" not in s:
+        print(s)
+    elif 'AM' in s and int(s[0:2])<12:
+        b= s[:-2]
+        print(b)
+    elif 'PM' in s and int(s[0:2])>=12:
+        b = s[:-2]
+        print(b)
+    else:
+        a=s[:-2]
+        cevir = a.split( ":" )
+        saat=int(cevir[0])+12
+        if saat==24:
+            saat=0
+        cevir[0]=str(saat).zfill(2)
+        print(":".join ( cevir ))
+s = input()
+result = timeConversion(s)
